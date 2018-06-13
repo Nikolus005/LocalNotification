@@ -9,6 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,
+  Label,
   Button,
   View
 } from 'react-native';
@@ -23,7 +24,7 @@ export default class App extends Component<Props> {
   render() {
     return  (
       <View style={styles.container}>
-        <Button onPress={() => this.bAction()} title="Click here" />
+        <Button onPress={() => this.bAction()} title="Generate Notification" />
       </View>
     );
   }

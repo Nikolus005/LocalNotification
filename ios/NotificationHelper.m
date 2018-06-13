@@ -39,8 +39,8 @@ RCT_EXPORT_METHOD(setNotification){
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
     
-    content.title = @"title";
-    content.body = @"this is message";
+    content.title = @"Hey!!";
+    content.body = @"How you doin? :)";
     content.sound = [UNNotificationSound defaultSound];
     UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
     UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"custom" content:content trigger:trigger];
