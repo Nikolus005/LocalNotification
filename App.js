@@ -25,11 +25,15 @@ export default class App extends Component<Props> {
     return  (
       <View style={styles.container}>
         <Button onPress={() => this.bAction()} title="Generate Notification" />
+        <Button onPress={() => this.logEvent()} title="log event" />
       </View>
     );
   }
   bAction(){
     notificationHelper.setNotification();
+  }
+  logEvent(){
+  	console.log("button tap");
   }
 }
 
